@@ -29,7 +29,7 @@ The primary objective of this study is to develop a content-based movie recommen
 The proposed model consists of two main components: a content-based filtering engine and a sentiment analysis module. The flowchart below illustrates the overall process:
 
 ![Proposed Model Diagram]
-![image](https://ibb.co/bXZDPqy)
+![image](https://user-images.githubusercontent.com/36665975/168742738-5435cf76-1a42-4d87-94b4-999e5bfc48d3.png)
 
 ## **Methodology**
 The methodology employed includes:
@@ -40,7 +40,7 @@ The methodology employed includes:
 
 The formulas used include:
 - **Cosine Similarity**:
-- 
+  
 ![image](https://user-images.githubusercontent.com/36665975/70401457-a7530680-1a55-11ea-9158-97d4e8515ca4.png)
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*LfW66-WsYkFqWc4XYJbEJg.png)
