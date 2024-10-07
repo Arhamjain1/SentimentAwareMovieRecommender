@@ -1,6 +1,6 @@
 # **Enhancing Movie Recommendations through Sentiment Analysis and Content-Based Techniques**
 
-![Python](https://img.shields.io/badge/Python-3.14-blueviolet)
+![Python](https://img.shields.io/badge/Python-3.12-blueviolet)
 ![Framework](https://img.shields.io/badge/Framework-Flask-red)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green)
 ![API](https://img.shields.io/badge/API-TMDB-fcba03)
