@@ -28,7 +28,6 @@ The primary objective of this study is to develop a content-based movie recommen
 ## **Proposed Model**
 The proposed model consists of two main components: a content-based filtering engine and a sentiment analysis module. The flowchart below illustrates the overall process:
 
-![Proposed Model Diagram]
 ![image](https://user-images.githubusercontent.com/36665975/168742738-5435cf76-1a42-4d87-94b4-999e5bfc48d3.png)
 
 ## **Methodology**
