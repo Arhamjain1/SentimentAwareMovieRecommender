@@ -43,6 +43,27 @@ The formulas used include:
 ![image](https://user-images.githubusercontent.com/36665975/70401457-a7530680-1a55-11ea-9158-97d4e8515ca4.png)
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*LfW66-WsYkFqWc4XYJbEJg.png)
+code uses a Logistic Regression model to perform sentiment analysis on a dataset of text reviews, aiming to classify each review as either positive or negative.
+
+### **Key Steps in the Process of Sentimental Analysis**
+
+Data Preprocessing:
+
+Text Cleaning: Each review is preprocessed to handle negations (like "not bad" becoming "good"), convert text to lowercase, remove HTML tags, special characters, digits, and stop words.
+Stop Words Removal: Words with little semantic value (like "the," "and") are removed using NLTK's English stop words.
+Feature Extraction with TF-IDF:
+
+TF-IDF Vectorization: Text reviews are transformed into numerical features using the Term Frequency-Inverse Document Frequency (TF-IDF) method, which evaluates the importance of each word (or bigram in this case) within the corpus.
+Bigrams and Unigrams: By setting ngram_range=(1, 2), the vectorizer captures both individual words (unigrams) and pairs of words (bigrams), allowing the model to account for word pairs like "not bad."
+Model Selection - Logistic Regression:
+
+Logistic Regression: This algorithm is well-suited for binary classification tasks. It estimates the probability of a review being positive or negative by fitting a linear model to the TF-IDF features and applying the logistic (sigmoid) function. The threshold of 0.5 is used to classify reviews as positive (1) or negative (0).
+Evaluation:
+
+Accuracy and Classification Report: After training, the model's performance is evaluated on a test dataset, giving accuracy and a classification report, which includes precision, recall, and F1-score for each class.
+Real-time Sentiment Prediction:
+
+Real-time Analysis: A custom predict_sentiment function applies the same preprocessing and TF-IDF transformation to any new review entered by the user, enabling real-time sentiment predictions.
 
 ## **Experimentation and Results**
 The datasets utilized include:
