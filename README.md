@@ -43,9 +43,10 @@ The formulas used include:
 ![image](https://user-images.githubusercontent.com/36665975/70401457-a7530680-1a55-11ea-9158-97d4e8515ca4.png)
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*LfW66-WsYkFqWc4XYJbEJg.png)
-code uses a Logistic Regression model to perform sentiment analysis on a dataset of text reviews, aiming to classify each review as either positive or negative.
+
 
 ### **Key Steps in the Process of Sentimental Analysis**
+Our code uses a Logistic Regression model to perform sentiment analysis on a dataset of text reviews, aiming to classify each review as either positive or negative.
 
 Data Preprocessing:
 
