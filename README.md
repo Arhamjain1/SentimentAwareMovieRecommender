@@ -51,16 +51,20 @@ Data Preprocessing:
 
 Text Cleaning: Each review is preprocessed to handle negations (like "not bad" becoming "good"), convert text to lowercase, remove HTML tags, special characters, digits, and stop words.
 Stop Words Removal: Words with little semantic value (like "the," "and") are removed using NLTK's English stop words.
+
 Feature Extraction with TF-IDF:
 
 TF-IDF Vectorization: Text reviews are transformed into numerical features using the Term Frequency-Inverse Document Frequency (TF-IDF) method, which evaluates the importance of each word (or bigram in this case) within the corpus.
 Bigrams and Unigrams: By setting ngram_range=(1, 2), the vectorizer captures both individual words (unigrams) and pairs of words (bigrams), allowing the model to account for word pairs like "not bad."
+
 Model Selection - Logistic Regression:
 
 Logistic Regression: This algorithm is well-suited for binary classification tasks. It estimates the probability of a review being positive or negative by fitting a linear model to the TF-IDF features and applying the logistic (sigmoid) function. The threshold of 0.5 is used to classify reviews as positive (1) or negative (0).
+
 Evaluation:
 
 Accuracy and Classification Report: After training, the model's performance is evaluated on a test dataset, giving accuracy and a classification report, which includes precision, recall, and F1-score for each class.
+
 Real-time Sentiment Prediction:
 
 Real-time Analysis: A custom predict_sentiment function applies the same preprocessing and TF-IDF transformation to any new review entered by the user, enabling real-time sentiment predictions.
@@ -82,7 +86,7 @@ Results were evaluated based on precision, recall, accuracy, and F1 score. The f
 Discussion of results indicates that the proposed model outperforms existing systems, particularly in terms of user satisfaction and relevance of recommendations.
 
 ## **Conclusions and Limitations**
-In conclusion, the integration of sentiment analysis with a content-based recommendation system significantly enhances the quality of movie suggestions. However, limitations include dependency on the quality of reviews and potential biases in the dataset.
+In conclusion, the integration of sentiment analysis with a content-based recommendation system significantly enhances the quality of movie suggestions. However, limitations include dependency on the quality of reviews and potential biases in the dataset other than the integration of the review sentiment analysis with the frontend due to time constraints.
 
 ## **References**
 1. Bennett, P. N., & Lanning, S. (2007). The Netflix Prize.
